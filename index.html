@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Barber Shop - Mens Salon (Kodichikanahalli) | Bengaluru</title>
+<meta name="description" content="The Barber Shop - Mens Salon in Kodichikanahalli, Bengaluru. Rated 5.0 from 379 reviews. Open daily. Call +91 80509 01902 to book your cut.">
+<meta name="keywords" content="barber shop Kodichikanahalli, men's salon Bengaluru, haircut near Kodichikanahalli, beard trim Bengaluru, hot towel shave Kodichikanahalli, walk-in barber Bengaluru">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Mukta:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #F7A072;
+    --secondary: #B79CED;
+    --background: #FFF9F0;
+    --text: #3A2E39;
+    --cta: #2EC4B6;
+    --font-heading: 'Baloo 2', cursive;
+    --font-body: 'Mukta', sans-serif;
+    --radius: 9999px;
+    --airy: 2rem;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+  }
+
+  img { max-width: 100%; display: block; }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* ── BUTTONS ── */
+  .cta {
+    display: inline-block;
+    background: var(--cta);
+    color: #fff;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+    transition: background 0.25s, transform 0.2s;
+    text-align: center;
+  }
+  .cta:hover { background: #25a99d; transform: translateY(-2px); }
+  .cta-outline {
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.7rem 1.8rem;
+    border-radius: var(--radius);
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s;
+  }
+  .cta-outline:hover { background: #fff; color: var(--text); }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: rgba(255,249,240,0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(247,160,114,0.2);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .nav-brand {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: var(--text);
+    max-width: 200px;
+    line-height: 1.2;
+  }
+  .nav-brand span { color: var(--primary); }
+  nav ul {
+    list-style: none;
+    display: none;
+    gap: 0;
+    flex-direction: column;
+    position: absolute;
+    top: 64px; left: 0; right: 0;
+    background: rgba(255,249,240,0.98);
+    padding: 1rem 1.5rem 1.5rem;
+    border-bottom: 2px solid var(--primary);
+  }
+  nav ul.open { display: flex; }
+  nav ul li a {
+    display: block;
+    padding: 0.6rem 0;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text);
+    transition: color 0.2s;
+  }
+  nav ul li a:hover { color: var(--primary); }
+  .burger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 4px;
+  }
+  .burger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+  .burger.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .burger.active span:nth-child(2) { opacity: 0; }
+  .burger.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  @media (min-width: 768px) {
+    nav ul {
+      display: flex !important;
+      flex-direction: row;
+      position: static;
+      background: transparent;
+      padding: 0;
+      border: none;
+      gap: 0.25rem;
+      align-items: center;
+    }
+    nav ul li a { padding: 0.4rem 0.75rem; font-size: 0.9rem; }
+    .burger { display: none; }
+    .nav-brand { max-width: none; }
+  }
+
+  /* ── SECTION BASE ── */
+  section { padding: 5rem 1.5rem; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-tag {
+    display: inline-block;
+    background: var(--primary);
+    color: #fff;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.3rem 1.1rem;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+  }
+  .section-heading {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+  .section-sub {
+    font-size: 1.05rem;
+    color: #6b5f6a;
+    max-width: 600px;
+    margin-bottom: 2.5rem;
+  }
+
+  /* ── FADE IN ── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 0 1.5rem;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, rgba(58,46,57,0.72) 0%, rgba(247,160,114,0.45) 100%);
+    z-index: 1;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 780px;
+    margin: 0 auto;
+    padding-top: 64px;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: var(--radius);
+    padding: 0.4rem 1.2rem;
+    color: #fff;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(4px);
+  }
+  .hero-badge .stars { color: #FFD700; letter-spacing: 1px; }
+  .hero-content h1 {
+    font-size: clamp(2rem, 6vw, 3.8rem);
+    color: #fff;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .hero-content p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+  }
+  .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+  /* ── ABOUT ── */
+  #about { background: #fff; }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  .about-img {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 40px rgba(58,46,57,0.12);
+  }
+  .about-img img { width: 100%; height: 320px; object-fit: cover; }
+  .about-text .section-tag { background: var(--secondary); }
+  .about-text p {
+    font-size: 1.05rem;
+    color: #5a4e59;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  .about-stats {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat-num {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    display: block;
+  }
+  .stat-label {
+    font-size: 0.85rem;
+    color: #6b5f6a;
+    font-weight: 500;
+  }
+
+  @media (min-width: 768px) {
+    .about-grid { grid-template-columns: 1fr 1fr; }
+    .about-img img { height: 420px; }
+  }
+
+  /* ── FEATURED MENU ── */
+  #services { background: var(--background); }
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  .service-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem 1.75rem;
+    box-shadow: 0 4px 24px rgba(58,46,57,0.07);
+    transition: transform 0.25s, box-shadow 0.25s;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(58,46,57,0.13); }
+  .service-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+  .service-card h3 {
+    font-size: 1.2rem;
+    color: var(--text);
+  }
+  .service-card p {
+    font-size: 0.95rem;
+    color: #6b5f6a;
+    line-height: 1.65;
+  }
+
+  @media (min-width: 768px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1024px) {
+    .services-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* ── REVIEWS ── */
+  #avis { background: #fff; }
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  .review-card {
+    background: var(--background);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(58,46,57,0.06);
+  }
+  .review-stars { color: #FFD700; font-size: 1.1rem; margin-bottom: 1rem; letter-spacing: 2px; }
+  .review-quote {
+    font-size: 1rem;
+    color: #4a3e49;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    font-style: italic;
+  }
+  .review-author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .review-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  .review-meta strong {
+    display: block;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text);
+  }
+  .review-meta span {
+    font-size: 0.82rem;
+    color: #9a8e99;
+  }
+
+  @media (min-width: 768px) {
+    .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* ── GALLERY ── */
+  #galerie { background: var(--background); }
+  .gallery-asymmetric {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+  .gallery-item {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(58,46,57,0.1);
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  .gallery-item:hover img { transform: scale(1.04); }
+  .gallery-item.large {
+    grid-column: 1 / -1;
+    height: 260px;
+  }
+  .gallery-item.small { height: 180px; }
+
+  @media (min-width: 768px) {
+    .gallery-asymmetric {
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 280px 200px;
+    }
+    .gallery-item.large {
+      grid-column: 1;
+      grid-row: 1 / 3;
+      height: 100%;
+    }
+    .gallery-item.small { height: 100%; }
+  }
+
+  /* ── HOURS & LOCATION ── */
+  #horaires { background: #fff; }
+  .hours-location-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 2.5rem;
+  }
+  .hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.97rem;
+  }
+  .hours-table tr {
+    border-bottom: 1px solid rgba(58,46,57,0.08);
+  }
+  .hours-table tr:last-child { border-bottom: none; }
+  .hours-table td {
+    padding: 0.7rem 0.5rem;
+    color: #4a3e49;
+  }
+  .hours-table td:first-child {
+    font-weight: 600;
+    color: var(--text);
+    width: 45%;
+  }
+  .hours-table td:last-child { color: #6b5f6a; }
+  .contact-info {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.97rem;
+    color: #4a3e49;
+  }
+  .contact-info-item .icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  .map-container {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(58,46,57,0.1);
+    height: 320px;
+  }
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  @media (min-width: 768px) {
+    .hours-location-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* ── CONTACT FORM ── */
+  #contact { background: var(--background); }
+  .contact-wrapper {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact-wrapper .section-sub { margin: 0 auto 2.5rem; }
+  .contact-form {
+    background: #fff;
+    border-radius: 24px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 8px 40px rgba(58,46,57,0.09);
+    text-align: left;
+  }
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+  .form-group label {
+    display: block;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text);
+    margin-bottom: 0.4rem;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1.1rem;
+    border: 2px solid rgba(58,46,57,0.12);
+    border-radius: 12px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text);
+    background: var(--background);
+    transition: border-color 0.2s;
+    outline: none;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus { border-color: var(--cta); }
+  .form-group textarea { resize: vertical; min-height: 120px; }
+  .form-submit { width: 100%; font-size: 1.05rem; padding: 0.9rem; margin-top: 0.5rem; }
+
+  /* ── TRUST SIGNALS ── */
+  #trust { background: linear-gradient(135deg, var(--text) 0%, #5a3e58 100%); }
+  #trust .section-heading { color: #fff; }
+  #trust .section-sub { color: rgba(255,255,255,0.75); }
+  #trust .section-tag { background: var(--primary); }
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+  }
+  .trust-item {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 16px;
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    transition: background 0.25s;
+  }
+  .trust-item:hover { background: rgba(255,255,255,0.14); }
+  .trust-item .t-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+  .trust-item span {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #fff;
+    line-height: 1.3;
+  }
+
+  @media (min-width: 768px) {
+    .trust-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--text);
+    color: rgba(255,255,255,0.7);
+    padding: 3rem 1.5rem 2rem;
+    text-align: center;
+  }
+  .footer-inner { max-width: 900px; margin: 0 auto; }
+  .footer-brand {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.75rem;
+  }
+  .footer-brand span { color: var(--primary); }
+  .footer-address {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  .footer-phone a {
+    color: var(--primary);
+    font-weight: 600;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+  }
+  .footer-divider {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin: 1.5rem 0 1rem;
+  }
+  .footer-copy { font-size: 0.82rem; color: rgba(255,255,255,0.4); }
+
+  /* ── RATING BANNER ── */
+  .rating-banner {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: #fff;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+  }
+  .rating-banner .stars { color: #FFD700; margin: 0 0.3rem; }
+</style>
+</head>
+<body>
+
+<!-- Rating Banner -->
+<div class="rating-banner" role="banner" aria-label="Rating banner">
+  <span class="stars">★★★★★</span> 5.0 Rating · 379 Happy Clients · Bengaluru's Trusted Barber Shop
+</div>
+
+<!-- Navigation -->
+<nav aria-label="Main navigation">
+  <div class="nav-brand"><span>The</span> Barber Shop</div>
+  <button class="burger" id="burger" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-menu" role="list">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#avis">Reviews</a></li>
+    <li><a href="#galerie">Gallery</a></li>
+    <li><a href="#horaires">Hours</a></li>
+    <li><a href="#contact" class="cta" style="padding:0.45rem 1.2rem;font-size:0.88rem;">Book Your Cut</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero" aria-label="Hero section">
+  <div class="hero-bg" role="img" aria-label="Barber shop interior"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content fade-in">
+    <div class="hero-badge">
+      <span class="stars">★★★★★</span>
+      <span>5.0 · 379 Reviews</span>
+    </div>
+    <h1>The Barber Shop<br>Mens Salon</h1>
+    <p>A 5.0-rated barber shop in Bengaluru, trusted by 379 happy clients. Classic cuts, expert grooming, and a warm welcome every visit.</p>
+    <div class="hero-btns">
+      <a href="tel:+918050901902" class="cta" aria-label="Call to book your cut">Book Your Cut</a>
+      <a href="#services" class="cta-outline" aria-label="Walk in today">Walk In Today</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" aria-label="About The Barber Shop">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img fade-in">
+        <img src="assets/gallery-1.jpg" alt="Inside The Barber Shop - Mens Salon Kodichikanahalli" loading="lazy">
+      </div>
+      <div class="about-text fade-in">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-heading">About The Barber Shop</h2>
+        <p>The Barber Shop - Mens Salon (Kodichikanahalli) is a barber shop in Bengaluru, Karnataka. Located at 1, Kodichikkanahalli Main Rd, near Sri Sadguru Indane Service, Duo Enclave Layout, BTM Layout III Stage, Bommanahalli, Bengaluru, Karnataka 560076, India, we are proud to hold a 5.0 rating from 379 reviews.</p>
+        <p>Our team, led by Mustakeem, delivers haircuts customised to each customer's request. Whether you're after a classic cut, a beard trim, or a relaxing hot towel shave, we bring skill and care to every chair.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">5.0</span>
+            <span class="stat-label">Star Rating</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">379</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">7</span>
+            <span class="stat-label">Days Open</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED MENU / SERVICES -->
+<section id="services" aria-label="Our services">
+  <div class="section-inner">
+    <div class="fade-in">
+      <span class="section-tag">What We Do</span>
+      <h2 class="section-heading">Expert Grooming Services</h2>
+      <p class="section-sub">At The Barber Shop - Mens Salon (Kodichikanahalli), every haircut is customised based on your request. Visit us on Kodichikkanahalli Main Rd in Bengaluru for a cut tailored to you.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-icon" style="background:rgba(247,160,114,0.15);">✂️</div>
+        <h3>Classic Men's Haircuts</h3>
+        <p>Precision cuts tailored to your style, whether you prefer a timeless classic or a modern look. Every cut is customised to your request.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon" style="background:rgba(183,156,237,0.15);">🧔</div>
+        <h3>Beard Trimming and Shaping</h3>
+        <p>Expert beard grooming to keep your facial hair looking sharp, clean, and perfectly shaped to complement your face.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon" style="background:rgba(46,196,182,0.15);">🪒</div>
+        <h3>Hot Towel Shaves</h3>
+        <p>A classic hot towel shave experience that leaves your skin smooth and refreshed, delivered with care and precision.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon" style="background:rgba(247,160,114,0.15);">💈</div>
+        <h3>Modern Styling</h3>
+        <p>Stay on trend with contemporary styling techniques that suit your personality and lifestyle, finished to perfection.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon" style="background:rgba(183,156,237,0.15);">🧴</div>
+        <h3>Grooming Products</h3>
+        <p>We use professional grooming products to ensure the best results for your hair and skin, every single visit.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon" style="background:rgba(46,196,182,0.15);">🚶</div>
+        <h3>Walk-In Convenience</h3>
+        <p>No appointment needed. Walk in any day of the week and our experienced barbers will take care of you right away.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOMER REVIEWS -->
+<section id="avis" aria-label="Customer reviews">
+  <div class="section-inner">
+    <div class="fade-in">
+      <span class="section-tag">Reviews</span>
+      <h2 class="section-heading">What Our Customers Say</h2>
+      <p class="section-sub">Real words from real clients who trust The Barber Shop - Mens Salon (Kodichikanahalli) for their grooming needs.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card fade-in">
+        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="review-quote">"Mustakeem The person incharge here is very kind and the hair cut is customised based on customer request. I really appreciate his work and kind gesture 🙌"</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">S</div>
+          <div class="review-meta">
+            <strong>Shashikumar Ram</strong>
+            <span>4 months ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card fade-in" style="background:linear-gradient(135deg,rgba(247,160,114,0.08),rgba(183,156,237,0.08));">
+        <div style="text-align:center;padding:2rem 1rem;">
+          <div style="font-size:2.5rem;margin-bottom:0.75rem;">⭐</div>
+          <p style="font-family:var(--font-heading);font-weight:700;font-size:1.5rem;color:var(--text);margin-bottom:0.25rem;">5.0 / 5.0</p>
+          <p style="color:#6b5f6a;font-size:0.95rem;margin-bottom:1rem;">Based on 379 Google Reviews.</p>
+          <a href="tel:+918050901902" class="cta" aria-label="Book your cut now">Book Your Cut</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY PREVIEW -->
+<section id="galerie" aria-label="Gallery preview">
+  <div class="section-inner">
+    <div class="fade-in">
+      <span class="section-tag">Our Shop</span>
+      <h2 class="section-heading">Take a Look Inside</h2>
+      <p class="section-sub">Take a look at The Barber Shop - Mens Salon (Kodichikanahalli) in Bengaluru.</p>
+    </div>
+    <div class="gallery-asymmetric fade-in">
+      <div class="gallery-item large">
+        <img src="assets/hero.jpg" alt="The Barber Shop Kodichikanahalli - main view" loading="lazy">
+      </div>
+      <div class="gallery-item small">
+        <img src="assets/gallery-1.jpg" alt="Barber at work - The Barber Shop Bengaluru" loading="lazy">
+      </div>
+      <div class="gallery-item small">
+        <img src="assets/gallery-2.jpg" alt="Grooming service at The Barber Shop Kodichikanahalli" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOURS & LOCATION -->
+<section id="horaires" aria-label="Hours and location">
+  <div class="section-inner">
+    <div class="fade-in">
+      <span class="section-tag">Find Us</span>
+      <h2 class="section-heading">Hours &amp; Location</h2>
+      <p class="section-sub">We are open seven days a week. Walk in any time during our opening hours and we will be happy to serve you.</p>
+    </div>
+    <div class="hours-location-grid">
+      <div class="fade-in">
+        <h3 style="font-family:var(--font-heading);font-size:1.2rem;margin-bottom:1.25rem;color:var(--text);">Opening Hours</h3>
+        <table class="hours-table" aria-label="Opening hours">
+          <tbody>
+            <tr><td>Monday</td><td>9:00 AM – 9:30 PM</td></tr>
+            <tr><td>Tuesday</td><td>9:00 AM – 9:30 PM</td></tr>
+            <tr><td>Wednesday</td><td>8:30 AM – 9:30 PM</td></tr>
+            <tr><td>Thursday</td><td>8:30 AM – 9:30 PM</td></tr>
+            <tr><td>Friday</td><td>8:30 AM – 9:30 PM</td></tr>
+            <tr><td>Saturday</td><td>8:30 AM – 9:30 PM</td></tr>
+            <tr><td>Sunday</td><td>8:30 AM – 10:00 PM</td></tr>
+          </tbody>
+        </table>
+        <div class="contact-info" style="margin-top:2rem;">
+          <div class="contact-info-item">
+            <div class="icon" aria-hidden="true">📍</div>
+            <span>1, Kodichikkanahalli Main Rd, near Sri Sadguru Indane Service, Duo Enclave Layout, BTM Layout III Stage, Bommanahalli, Bengaluru, Karnataka 560076, India</span>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon" aria-hidden="true">📞</div>
+            <span><a href="tel:+918050901902" style="color:var(--primary);font-weight:600;">+91 80509 01902</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps?q=12.9081,77.6101&z=16&output=embed"
+            title="The Barber Shop Kodichikanahalli location map"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            aria-label="Google Maps showing The Barber Shop location in Kodichikanahalli, Bengaluru">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contact" aria-label="Contact form">
+  <div class="section-inner">
+    <div class="contact-wrapper">
+      <div class="fade-in">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-heading">Ready for Your Next Cut?</h2>
+        <p class="section-sub">Call us at <a href="tel:+918050901902" style="color:var(--primary);font-weight:600;">+91 80509 01902</a> to book your appointment at The Barber Shop - Mens Salon (Kodichikanahalli) in Bengaluru, or send us a message below.</p>
+      </div>
+      <div class="contact-form fade-in">
+        <form action="https://checkout.kamkod.com/contact" method="POST" aria-label="Contact form">
+          <input type="hidden" name="lead_id" value="ChIJD15xgqwVrjsRQ6AnwQnlxtA">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what you need — a haircut, beard trim, or anything else." required aria-required="true"></textarea>
+          </div>
+          <button type="submit" class="cta form-submit" aria-label="Send your message">Book Your Cut</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST SIGNALS -->
+<section id="trust" aria-label="Why choose us">
+  <div class="section-inner">
+    <div class="fade-in" style="text-align:center;">
+      <span class="section-tag">Why Choose Us</span>
+      <h2 class="section-heading">The Barber Shop Promise</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.75);margin:0 auto 0;">The Barber Shop - Mens Salon (Kodichikanahalli) holds a 5.0 rating from 379 reviews in Bengaluru. Our customers appreciate our kind service and haircuts customised to their requests.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item fade-in">
+        <span class="t-icon" aria-hidden="true">🚶</span>
+        <span>Walk-ins Welcome</span>
+      </div>
+      <div class="trust-item fade-in">
+        <span class="t-icon" aria-hidden="true">✂️</span>
+        <span>Experienced Barbers</span>
+      </div>
+      <div class="trust-item fade-in">
+        <span class="t-icon" aria-hidden="true">🧴</span>
+        <span>Professional Grooming Products</span>
+      </div>
+      <div class="trust-item fade-in">
+        <span class="t-icon" aria-hidden="true">💳</span>
+        <span>Card Payments Accepted</span>
+      </div>
+      <div class="trust-item fade-in">
+        <span class="t-icon" aria-hidden="true">🅿️</span>
+        <span>Easy Parking Nearby</span>
+      </div>
+      <div class="trust-item fade-in">
+        <span class="t-icon" aria-hidden="true">🧼</span>
+        <span>Clean and Sanitized Tools</span>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:3rem;" class="fade-in">
+      <a href="tel:+918050901902" class="cta" aria-label="Call to book your cut now">Book Your Cut Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer aria-label="Site footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><span>The</span> Barber Shop · Mens Salon</div>
+    <p class="footer-address">
+      1, Kodichikkanahalli Main Rd, near Sri Sadguru Indane Service,<br>
+      Duo Enclave Layout, BTM Layout III Stage, Bommanahalli,<br>
+      Bengaluru, Karnataka 560076, India
+    </p>
+    <p class="footer-phone"><a href="tel:+918050901902" aria-label="Call The Barber Shop">+91 80509 01902</a></p>
+    <hr class="footer-divider">
+    <p class="footer-copy">&copy; 2024 The Barber Shop - Mens Salon (Kodichikanahalli). All rights reserved. · Barber shop Kodichikanahalli · Men's salon Bengaluru</p>
+  </div>
+</footer>
+
+<script>
+  // ── BURGER MENU ──
+  const burger = document.getElementById('burger');
+  const navMenu = document.getElementById('nav-menu');
+
+  burger.addEventListener('click', function () {
+    const isOpen = navMenu.classList.toggle('open');
+    burger.classList.toggle('active', isOpen);
+    burger.setAttribute('aria-expanded', isOpen.toString());
+  });
+
+  // Close menu on nav link click (mobile)
+  navMenu.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      navMenu.classList.remove('open');
+      burger.classList.remove('active');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // ── FADE-IN ON SCROLL ──
+  const fadeEls = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  fadeEls.forEach(function (el) {
+    observer.observe(el);
+  });
+
+  // ── NAV SCROLL STYLE ──
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 60) {
+      nav.style.boxShadow = '0 4px 24px rgba(58,46,57,0.12)';
+    } else {
+      nav.style.boxShadow = 'none';
+    }
+  });
+</script>
+<!-- KAMKOD:DEMO_START -->
+<script>
+(function(){
+  var URL = 'https://checkout.kamkod.com/?lead=ChIJD15xgqwVrjsRQ6AnwQnlxtA';
+  document.addEventListener('click', function(e){
+    var el = e.target.closest('a, button, [role="button"]');
+    if(!el || el.closest('form')) return;               /* formulaire -> endpoint contact */
+    if(el.classList.contains('cta')) { e.preventDefault(); window.location.href = URL; return; }
+    if(el.closest('header nav, nav')) return;           /* navigation interne de la démo */
+    var a = e.target.closest('a');
+    if(!a) return;                                      /* bouton seul hors nav: on laisse */
+    var href = a.getAttribute('href') || '';
+    if(href.charAt(0) === '#') return;                  /* ancres de section */
+    if(/^https?:|^\/\//i.test(href)) return;          /* lien externe réel */
+    e.preventDefault(); window.location.href = URL;     /* tel:, mailto:, javascript:… */
+  }, true);
+})();
+</script>
+<div id="kamkod-demo-banner" style="position:fixed;bottom:0;left:0;right:0;background:#000;color:#fff;padding:12px 16px;text-align:center;z-index:9999;font-family:system-ui,sans-serif;font-size:14px;">
+  This is a preview of your future website — <a href="https://checkout.kamkod.com/?lead=ChIJD15xgqwVrjsRQ6AnwQnlxtA" style="color:#FFD700;font-weight:600;">activate it now</a>
+</div>
+<!-- KAMKOD:DEMO_END -->
+</body>
+</html>
